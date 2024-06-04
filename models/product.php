@@ -1,6 +1,9 @@
 <?php
+require_once __DIR__ . "/../traits/weightable.php";
 class Product
 {
+    use weightable;
+
     private string $title;
     private float $price;
     private string $image;
